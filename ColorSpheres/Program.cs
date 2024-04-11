@@ -14,7 +14,7 @@ namespace ColorSpheres
             s.Pop();
             s.Throw();
             Console.WriteLine(s.GetTimesThrown());
-            Console.WriteLine(c);
+            Console.WriteLine(c.GetGrey());
         }
     }
 }
