@@ -9,6 +9,10 @@ namespace ColorSpheres
 {
     public class Color
     {
+        public byte Red {get;}
+        public byte Green {get;}
+        public byte Blue {get;}
+        public byte Alpha {get;}
         public Color(byte red, byte green, byte blue, byte alpha)
         {
             Red = red;
@@ -24,20 +28,16 @@ namespace ColorSpheres
             Alpha = 255;
         }
 
-        public byte Red {get;}
-        public byte Green {get;}
-        public byte Blue {get;}
-        public byte Alpha {get;}
 
-
-        public byte GetGrey()
+        public byte Grey
         {
-            int redInt = Convert.ToInt32(red);
-            int greenInt = Convert.ToInt32(green);
-            int blueInt = Convert.ToInt32(blue);
-            byte grey = Convert.ToByte((redInt + greenInt + blueInt)/3);
-
-            return grey;
+            get
+            {
+                int redInt = Convert.ToInt32(Red);
+                int greenInt = Convert.ToInt32(Green);
+                int blueInt = Convert.ToInt32(Blue);
+                return Convert.ToByte((redInt + greenInt + blueInt)/3);
+            }
         }
     }
 }
