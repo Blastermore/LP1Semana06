@@ -9,10 +9,10 @@ namespace ColorSpheres
 {
     public class Color
     {
-        private byte red;
-        private byte green;
-        private byte blue;
-        private byte alpha;
+        readonly private byte red;
+        readonly private byte green;
+        readonly private byte blue;
+        readonly private byte alpha;
         public Color(byte red, byte green, byte blue, byte alpha)
         {
             this.red = red;
