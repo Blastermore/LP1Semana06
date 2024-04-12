@@ -8,8 +8,8 @@ title: BetterColorSpheres
     +Color: Color
     +Radius: int
     +Thrown: int
-    +Throw(): void
-    +Pop(): void
+    +Throw() void
+    +Pop() void
     }
 
     class Color{
