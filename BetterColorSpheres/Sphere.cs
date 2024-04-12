@@ -7,29 +7,22 @@ namespace ColorSpheres
 {
     public class Sphere
     {
-        readonly private Color color;
-        private int radius;
-        private int thrown;
+        public Color Color {get;}
+        public int Radius {get;private set;}
+        public int Thrown{get; private set;}
         public Sphere(Color color, int radius)
         {
-            this.color = color;
-            this.radius = radius;
-            thrown = 0;
+            Color = color;
+            Radius = radius;
+            Thrown = 0;
         }
-        public void Pop()
-        {
-            radius = 0;
-        }
+
         public void Throw()
         {
-            if (radius > 0)
+            if (Radius > 0)
             {
-                thrown += 1;
+                Thrown += 1;
             }
-        }
-        public int GetTimesThrown()
-        {
-            return thrown;
         }
     }
 }
