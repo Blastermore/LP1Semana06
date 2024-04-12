@@ -31,5 +31,10 @@ namespace ColorSpheres
         {
             return thrown;
         }
+
+        public Color GetColor()
+        {
+            return color;
+        }
     }
 }
