@@ -12,6 +12,7 @@ namespace ColorSpheres
             s.Throw();
             s.Throw();
             Console.WriteLine(s.Radius);
+            s.Pop();
             s.Throw();
             Console.WriteLine(s.Thrown);
         }
