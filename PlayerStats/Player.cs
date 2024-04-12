@@ -12,6 +12,7 @@ namespace PlayerStats
         private int wonGames;
         public float HighScore   
         {
+            get => highScore;
             set
             {
                 if (value > highScore)
@@ -30,11 +31,11 @@ namespace PlayerStats
                 }
                 else
                 {
-                    return wonGames/playedGames;
+                    return (float) wonGames/playedGames;
                 }
             }
         }
-        public Player(name)
+        public Player(string name)
         {
             Name = name;
             highScore = 0;
